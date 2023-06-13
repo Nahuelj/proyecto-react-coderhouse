@@ -1,0 +1,38 @@
+.container-cart-widget{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10%;
+    position: relative;
+    margin: 0 15px 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.100);
+}
+
+.button-cart-widget{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.img-cart-widget{
+    width: 40px;
+}
+
+.notification-cart-widget{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: -5px;
+    left: 40px;
+}
