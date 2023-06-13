@@ -8,13 +8,13 @@ const Navbar = () => {
             <h1>Json</h1>
             <ul>
                 <li>
-                    <a href="#">Pantalones</a>
+                    <a href="*">Pantalones</a>
                 </li>
                 <li>
-                    <a href="#">Remeras</a>
+                    <a href="*">Remeras</a>
                 </li>
                 <li>
-                    <a href="#">Abrigos</a>
+                    <a href="*">Abrigos</a>
                 </li>
             </ul>
         </div>
