@@ -1,0 +1,72 @@
+[
+  {
+    "categoria": "Buzo",
+    "nombre": "Buzo Friza Slim",
+    "id": 1,
+    "color": "blanco",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_740247-MLA69345970609_052023-W.webp"
+  },
+  {
+    "categoria": "Buzo",
+    "nombre": "Buzo Caguro",
+    "id": 2,
+    "color": "negro",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_626237-MLA52853876230_122022-W.webp"
+  },
+  {
+    "categoria": "Buzo",
+    "nombre": "Buzo Micropolar",
+    "id": 3,
+    "color": "negro",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_986746-MLA52320606070_112022-W.webp"
+  },
+  {
+    "categoria": "Pantalon",
+    "nombre": "Pantalón Pampero",
+    "id": 4,
+    "color": "marrón",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_607050-MLA69546601391_052023-W.webp"
+  },
+  {
+    "categoria": "Pantalon",
+    "nombre": "Pantalón Cargo",
+    "id": 5,
+    "color": "negro",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_628103-MLA53809844087_022023-W.webp"
+  },
+  {
+    "categoria": "Pantalon",
+    "nombre": "Pantalón Jogging",
+    "id": 6,
+    "color": "rosa",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_841860-MLA44847299180_022021-W.webp"
+  },
+  {
+    "categoria": "Remera",
+    "nombre": "Remera Lisa",
+    "id": 7,
+    "color": "negra",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_754972-MLA70182463244_062023-OO.jpg"
+  },
+  {
+    "categoria": "Remera",
+    "nombre": "Remera Lisa",
+    "id": 7,
+    "color": "rosa",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_903927-MLA50771897000_072022-W.webp"
+  },
+  {
+    "categoria": "Remera",
+    "nombre": "Remera Lisa",
+    "id": 8,
+    "color": "rosa",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_903927-MLA50771897000_072022-W.webp"
+  },
+  {
+    "categoria": "Remera",
+    "nombre": "Remera Lisa",
+    "id": 9,
+    "color": "azul",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_926048-MLA51344638387_082022-W.webp"
+  }
+]
