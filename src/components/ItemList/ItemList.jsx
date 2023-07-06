@@ -25,14 +25,12 @@ const ItemList = () => {
         <div>Loading...</div>
       ) : (
         products.map((pr) => (
-          <Link>
             <Item 
               key={pr.id} 
               id={pr.id}
               name={pr.nombre} 
               price={pr.price} 
               src={pr.img} />
-          </Link>
         ))
       )}
     </div>
