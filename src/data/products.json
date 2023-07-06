@@ -52,7 +52,7 @@
     "nombre": "Remera Lisa",
     "id": 7,
     "color": "negra",
-    "img": "https://http2.mlstatic.com/D_NQ_NP_754972-MLA70182463244_062023-OO.jpg",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_831858-MLA48044614602_102021-W.webp",
     "price": 12.999
   },
   {
@@ -66,15 +66,7 @@
   {
     "categoria": "Remera",
     "nombre": "Remera Lisa",
-    "id": 9,
-    "color": "rosa",
-    "img": "https://http2.mlstatic.com/D_NQ_NP_903927-MLA50771897000_072022-W.webp",
-    "price": 12.999
-  },
-  {
-    "categoria": "Remera",
-    "nombre": "Remera Lisa",
-    "id": 10,
+    "id": 0,
     "color": "azul",
     "img": "https://http2.mlstatic.com/D_NQ_NP_926048-MLA51344638387_082022-W.webp",
     "price": 12.999

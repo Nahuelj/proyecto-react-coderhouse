@@ -1,10 +1,10 @@
 import React from 'react'
-import "../styles/Navbar.css";
+import styles from "./Navbar.module.css"
 
 const Navbar = () => {
   return (
     <nav>
-        <div className='container-nav'>
+        <div className={styles.containerNav}>
             <h1>Json</h1>
             <ul>
                 <li>

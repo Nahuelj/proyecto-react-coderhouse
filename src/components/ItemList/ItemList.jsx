@@ -21,7 +21,7 @@ const ItemList = () => {
   return (
     <div className={styles.containerItemList}>
       {products.length === 0 ? (
-        <div>load</div>
+        <div>Loading...</div>
       ) : (
         products.map((pr) => (
           <Item 
