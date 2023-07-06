@@ -1,0 +1,9 @@
+.containerItemList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}

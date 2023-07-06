@@ -1,6 +1,7 @@
 import './App.css';
-import CartWidget from './components/CartWidget';
+import CartWidget from './components/CartWidget/CartWidget';
 import Item from './components/Item/Item';
+import ItemList from './components/ItemList/ItemList';
 import ItemListContainer from './components/ItemListContainer';
 import Navbar from './components/Navbar';
 
@@ -12,8 +13,6 @@ function App() {
                 <CartWidget />
             </div>
             <ItemListContainer greeting="Mensaje enviado desde una prop" />
-
-            <Item/>
         </div>
     );
 }
