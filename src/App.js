@@ -6,13 +6,17 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
     return (
+        <BrowserRouter>
         <div className="App">
             <div className='container-nav-widget'>
                 <Navbar />
                 <CartWidget />
             </div>
-            <ItemListContainer greeting="Mensaje enviado desde una prop" />
+            <Routes>
+                <Route path='/' element={<ItemListContainer greeting="Mensaje enviado desde una prop" />}/>
+            </Routes>
         </div>
+        </BrowserRouter>
     );
 }
 
