@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import data from "../../data/products.json";
 import Item from "../Item/Item";
 import styles from "./ItemList.module.css"
+import Link from "react-router-dom"
 
 const ItemList = () => {
   const [products, setProducts] = useState([]);
@@ -19,19 +20,20 @@ const ItemList = () => {
   }, []);
 
   return (
-    <div className={styles.containerItemList}>
+    <Link className={styles.containerItemList}>
       {products.length === 0 ? (
         <div>Loading...</div>
       ) : (
         products.map((pr) => (
           <Item 
             key={pr.id} 
+            id={pr.id}
             name={pr.nombre} 
             price={pr.price} 
             src={pr.img} />
         ))
       )}
-    </div>
+    </Link>
   );
 };
 
