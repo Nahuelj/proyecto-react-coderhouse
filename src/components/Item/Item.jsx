@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "./Item.module.css"
 import { Link } from 'react-router-dom'
 
-const Item = ({src, price, name}) => {
+const Item = ({src, price, name, id}) => {
   return (
     <Link to={`/item/${id}`} className={styles.containerItem}>
         <img className={styles.imgItem} src={src} alt="" />
