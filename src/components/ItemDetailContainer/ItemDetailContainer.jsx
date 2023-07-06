@@ -1,9 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import data from "../../data/products.json";
+import { useParams } from "react-router-dom";
+import ItemDetail from "../ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
-  return (
-    <div>ItemDetailContainer</div>
-  )
-}
+  const [product, setProduct] = useState([]);
+  const {id}= useParams();
 
-export default ItemDetailContainer
+  useEffect(() => {
+    const promesa = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(data);
+      }, 1000);
+    });
+    promesa.then((res) => setProduct(res.find((item)=> item.id === parseInt(id))))
+    console.log(product);
+  }, [id]);
+
+  return (
+    <div>
+    { product.length === 0? <div>loading...</div>:
+        <ItemDetail 
+        nombre={product.nombre}
+        color={product.color}
+        img={product.img}
+        price={product.price}/>
+      }
+      </div>
+  )
+};
+
+export default ItemDetailContainer;

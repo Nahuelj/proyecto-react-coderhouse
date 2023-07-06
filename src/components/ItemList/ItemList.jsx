@@ -11,7 +11,7 @@ const ItemList = () => {
     const promesa = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(data);
-      }, 4000);
+      }, 1000);
     });
 
     promesa.then((result) => {
