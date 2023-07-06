@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
 
   return (
     <div>
-    { product.length === 0? <div>loading...</div>:
+    { product.length === 0? <div>Loading...</div>:
         <ItemDetail 
         nombre={product.nombre}
         color={product.color}
