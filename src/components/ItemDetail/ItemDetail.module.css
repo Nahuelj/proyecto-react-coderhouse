@@ -1,3 +1,11 @@
+
+.container{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
 .containerItemDetail{
     display: flex;
     flex-direction: column;

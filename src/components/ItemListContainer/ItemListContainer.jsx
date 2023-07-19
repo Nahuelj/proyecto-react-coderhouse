@@ -19,7 +19,6 @@ const ItemListContainer = ({ greeting }) => {
       setProducts(result);
       if (id) {
         setProducts(result.filter(item => item.categoria == id));
-
       }
     });
   }, [id]);

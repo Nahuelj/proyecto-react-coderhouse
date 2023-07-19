@@ -1,17 +1,18 @@
 import React from "react";
 import styles from "./CartWidget.module.css"
+import { Link } from 'react-router-dom'
 
-const CartWidget = () => {
+const CartWidget = ({cant = 0}) => {
   return (
     <div className={styles.containerCartWidget}>
-      <button className={styles.buttonCartWidget}>
+      <Link to="/cart" className={styles.buttonCartWidget}>
         <img
           className={styles.imgCartWidget}
           src={require("../../img/cart.png")}
           alt="Imagen del carrito"
         />
-      </button>
-      <p className={styles.notificationCartWidget}>5</p>
+      </Link>
+      <p className={styles.notificationCartWidget}>{cant}</p>
     </div>
   );
 };
