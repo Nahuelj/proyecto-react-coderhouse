@@ -14,7 +14,6 @@ const ItemDetailContainer = () => {
       }, 1000);
     });
     promesa.then((res) => setProduct(res.find((item)=> item.id === parseInt(id))))
-    console.log(product);
   }, [id]);
 
   return (
@@ -25,7 +24,9 @@ const ItemDetailContainer = () => {
         color={product.color}
         img={product.img}
         price={product.price}
-        stock={product.stock} />
+        stock={product.stock}
+        category={product.categoria}
+        id={product.id} />
       }
       </div>
   )

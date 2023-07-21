@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from "./ItemDetail.module.css"
-import Counter from '../Counter/Counter';
+import ItemCount from '../ItemCount/ItemCount';
+import {MyContext} from "../Context/Context";
+ 
+const ItemDetail = ({category, nombre, color, price, img, id, stock}) => {
+  const {agregar} = useContext(MyContext)
 
-const ItemDetail = ({nombre, color, price, img, id, stock}) => {
+  const item = {
+    "category": category,
+    "nombre": nombre,
+    "color": color,
+    "price": price,
+    "img": img,
+    "id": id,
+  }
+
+
   return (
     <div className={styles.container}>
       <div className={styles.containerItemDetail}>
@@ -12,7 +25,9 @@ const ItemDetail = ({nombre, color, price, img, id, stock}) => {
         <div className={styles.color}>color: {color}</div>
       </div>
       <div>
-        <Counter stock={stock}/>
+        <ItemCount stock={stock}
+                  fn={agregar}
+                  item={item}/>
       </div>
     </div>
   )
