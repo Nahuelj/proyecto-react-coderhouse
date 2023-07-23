@@ -3,11 +3,11 @@ import styles from "./ItemDetail.module.css"
 import ItemCount from '../ItemCount/ItemCount';
 import {MyContext} from "../Context/Context";
  
-const ItemDetail = ({category, nombre, color, price, img, id, stock}) => {
+const ItemDetail = ({categoria, nombre, color, price, img, id, stock}) => {
   const {agregar} = useContext(MyContext)
 
   const item = {
-    "category": category,
+    "categoria": categoria,
     "nombre": nombre,
     "color": color,
     "price": price,

@@ -3,13 +3,10 @@ import { MyContext } from '../Context/Context'
 import ItemCart from '../ItemCart/ItemCart';
 import styles from './Cart.module.css';
 import TotalCart from '../ItemCart/TotalCart';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
-  const {itemsCart, clean, eliminarElemento} = useContext(MyContext);
-
-  const totalCantidad = itemsCart.reduce((acu, item)=>acu + item.cantidad, 0);
-
-  const totaPrecio = itemsCart.reduce((total, item)=>total + item.price * item.cantidad, 0);
+  const {itemsCart, clean, eliminarElemento, totalCantidad, totalPrecio} = useContext(MyContext);
 
   return (
     <div className={styles.containerCart}>
@@ -27,24 +24,9 @@ const Cart = () => {
             ))}
             <TotalCart
             cant={totalCantidad}
-            precio={totaPrecio}/>
+            precio={totalPrecio}/>
             <button onClick={clean} >Limpiar Carrito</button>
-      </div>
-      <div>
-        <div className={styles.finalizar}>Finalizar Compra</div>
-
-        <form className={styles.formulario} action="">
-          <label htmlFor="">Nombre:</label>
-          <input type="" />
-          
-          <label htmlFor="">Tel:</label>
-          <input type="number" />
-
-          <label htmlFor="">Correo electronico:</label>
-          <input type="text" />
-        </form>
-
-        <button>Comprar</button>
+            <Link to="/finalizar"><button>Finaliza compra</button></Link>
       </div>
     </div>
   )

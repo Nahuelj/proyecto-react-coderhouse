@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
-import data from "../../data/products.json";
 import { useParams } from "react-router-dom";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import { doc, getDoc} from "firebase/firestore"
+import { db } from "../../firebase/config"
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState([]);
   const {id}= useParams();
 
   useEffect(() => {
-    const promesa = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(data);
-      }, 1000);
-    });
-    promesa.then((res) => setProduct(res.find((item)=> item.id === parseInt(id))))
+    const ref = doc(db, "productos", id);
+    getDoc(ref)
+      .then((resp) => setProduct(
+        {...resp.data(), id: resp.id}
+      ));
   }, [id]);
 
   return (
@@ -23,9 +23,9 @@ const ItemDetailContainer = () => {
         nombre={product.nombre}
         color={product.color}
         img={product.img}
-        price={product.price}
+        price={product.precio}
         stock={product.stock}
-        category={product.categoria}
+        categoria={product.categoria}
         id={product.id} />
       }
       </div>

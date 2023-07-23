@@ -14,7 +14,7 @@ const ItemList = ({products}) => {
             key={pr.id}
             id={pr.id} 
             name={pr.nombre} 
-            price={pr.price.toFixed(3)} 
+            price={pr.precio} 
             src={pr.img} />
         ))
       )}

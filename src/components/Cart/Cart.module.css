@@ -13,15 +13,3 @@
     gap: 1rem;
 }
 
-.formulario{
-    display: flex;
-    flex-direction: column;
-    gap: .3rem;
-}
-
-.finalizar{
-    margin-top: 1rem;
-    border-top: 1px solid #ccc;
-    padding-top: 2rem;
-    margin-bottom: 1rem;
-}

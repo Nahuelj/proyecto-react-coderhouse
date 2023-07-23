@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom'
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer"
 import Cart from './components/Cart/Cart';
+import FinalizarCompra from './components/FinalizarCompra/FinalizarCompra';
 
 
 
@@ -23,6 +24,7 @@ function App() {
                 <Route path='/category/:id' element={<ItemListContainer greeting={"Shop"} />}/>
                 <Route path='/item/:id' element={<ItemDetailContainer/>}/>
                 <Route path="/cart" element={<Cart/>} />
+                <Route path="/finalizar" element={<FinalizarCompra/>} />
             </Routes>
         </div>
         </BrowserRouter>

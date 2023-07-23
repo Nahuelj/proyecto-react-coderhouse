@@ -30,16 +30,18 @@ const MyContextProvider = ({ children }) => {
   const eliminarElemento = (id) => {
     setItemsCart((prev) => prev.filter((item) => item.id !== id));
   };
+
+  const totalCantidad = itemsCart.reduce((acu, item)=>acu + item.cantidad, 0);
+
+  const totalPrecio = itemsCart.reduce((total, item)=>total + item.price * item.cantidad, 0);
   
 
   const clean= () => {
     setItemsCart([]);
   }
-
-    console.log(itemsCart);
-    
+  
   return (
-    <MyContext.Provider value={{ eliminarElemento, clean, agregar, itemsCart, setItemsCart }}>
+    <MyContext.Provider value={{totalCantidad, totalPrecio, eliminarElemento, clean, agregar, itemsCart, setItemsCart }}>
       {children}
     </MyContext.Provider>
   );
