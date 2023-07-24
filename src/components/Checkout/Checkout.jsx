@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import styles from "./FinalizarCompra.module.css"
+import styles from "./Checkout.module.css"
 import { MyContext } from '../CartContext/CartContext'
 import { collection, addDoc } from "firebase/firestore"
 import {db} from "../../firebase/config"
@@ -63,21 +63,20 @@ const Checkout = () => {
 
   return (
     <div>
-        <div className={styles.finalizar}>Finalizar Compra</div>
+        <h3 className={styles.finalizar}>Finalizar Compra</h3>
 
         <form className={styles.formulario} action="">
-          <label htmlFor="">Nombre:</label>
-          <input onChange={handlerChange} value={formValues.nombre} required name='nombre' type="text" placeholder='Nombre Apellido' />
+          <label className={styles.labelForm} htmlFor="">Nombre:</label>
+          <input className={styles.inputForm} onChange={handlerChange} value={formValues.nombre} required name='nombre' type="text" placeholder='Nombre Apellido' />
           
-          <label htmlFor="">Correo Electronico:</label>
-          <input onChange={handlerChange} value={formValues.email} required name='email' type="email" placeholder='nombre@gmail.com'/>
+          <label className={styles.labelForm} htmlFor="">Correo Electronico:</label>
+          <input className={styles.inputForm} onChange={handlerChange} value={formValues.email} required name='email' type="email" placeholder='nombre@gmail.com'/>
 
-          <label htmlFor="">Correo electronico:</label>
-          <input onChange={handlerChange} value={formValues.telefono} required name='telefono' type="number" placeholder='Numero Telefonico'/>
+          <label className={styles.labelForm} htmlFor="">Correo electronico:</label>
+          <input className={styles.inputForm} onChange={handlerChange} value={formValues.telefono} required name='telefono' type="number" placeholder='Numero Telefonico'/>
 
-        <button type='submit'  onClick={handlerClick}>Comprar</button>
+        <button className={styles.buttonForm} type='submit'  onClick={handlerClick}>Comprar</button>
         </form>
-
 
     </div>
   )

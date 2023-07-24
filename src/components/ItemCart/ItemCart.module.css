@@ -9,3 +9,18 @@
 .imgItem{
     height: 50px;
 }
+
+.buttonDelete{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.buttonDelete:hover{
+    transform: scale(1.2);
+    transition: all 0.1s ease-in-out;
+}

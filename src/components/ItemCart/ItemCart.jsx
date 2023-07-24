@@ -19,7 +19,7 @@ const ItemCart = ({img, nombre, cantidad, precio, id, eliminar}) => {
         <div className={styles.precio}>
             ${precio}
         </div>
-        <button onClick={borrar}>
+        <button className={styles.buttonDelete} onClick={borrar}>
             X
         </button>
     </div>

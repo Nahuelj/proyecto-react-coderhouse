@@ -13,3 +13,24 @@
     gap: 1rem;
 }
 
+.buttonsCart{
+    padding: .6rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonsCart:hover{
+    transform: scale(1.1);
+    transition: all .2s ease;
+}
+
+.buttonsCartClean{
+    background-color: rgb(219, 23, 23);
+    color: white;
+}
+
+.buttonsCartChechout{
+    background-color: green;
+    color: white;
+}

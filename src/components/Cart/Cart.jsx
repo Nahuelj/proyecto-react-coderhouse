@@ -25,8 +25,8 @@ const Cart = () => {
             <TotalCart
             cant={totalCantidad}
             precio={totalPrecio}/>
-            <button onClick={clean} >Limpiar Carrito</button>
-            <Link to="/finalizar"><button>Finaliza compra</button></Link>
+            <button className={`${styles.buttonsCart} ${styles.buttonsCartClean}`} onClick={clean} >Limpiar Carrito</button>
+            <Link to="/finalizar"><button className={`${styles.buttonsCart} ${styles.buttonsCartChechout}`}>Finaliza compra</button></Link>
       </div>
     </div>
   )
