@@ -63,7 +63,7 @@ const Checkout = () => {
 
   return (
     <div>
-        <h3 className={styles.finalizar}>Finalizar Compra</h3>
+        <h1 className={styles.finalizar}>Finalizar Compra</h1>
 
         <form className={styles.formulario} action="">
           <label className={styles.labelForm} htmlFor="">Nombre:</label>
