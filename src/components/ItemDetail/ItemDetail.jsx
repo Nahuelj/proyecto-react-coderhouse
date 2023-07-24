@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import styles from "./ItemDetail.module.css"
 import ItemCount from '../ItemCount/ItemCount';
-import {MyContext} from "../Context/Context";
+import {MyContext} from "../CartContext/CartContext";
  
 const ItemDetail = ({categoria, nombre, color, price, img, id, stock}) => {
   const {agregar} = useContext(MyContext)

@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react'
 import styles from "./FinalizarCompra.module.css"
-import { MyContext } from '../Context/Context'
+import { MyContext } from '../CartContext/CartContext'
 import { collection, addDoc } from "firebase/firestore"
 import {db} from "../../firebase/config"
 
-const FinalizarCompra = () => {
+const Checkout = () => {
 
     const  [formValues, setFormValues] = useState({
         nombre: "",
@@ -45,7 +45,7 @@ const FinalizarCompra = () => {
                 clean();
                 resetForm();
                 const numeroOrden = doc.id;
-                alert(`Gracias por comprar su orden ha sido registrada con exito, su numero de orden es:  "${numeroOrden}" ` )
+                alert(`Gracias por comprar, su orden ha sido registrada con exito, su número de orden es:  "${numeroOrden}" ` )
             })
 
 
@@ -83,4 +83,4 @@ const FinalizarCompra = () => {
   )
 }
 
-export default FinalizarCompra
+export default Checkout
