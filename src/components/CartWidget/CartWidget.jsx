@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { MyContext } from "../CartContext/CartContext";
 
 const CartWidget = () => {
-  const {itemsCart} = useContext(MyContext);
+  const {totalCantidad} = useContext(MyContext);
   return (
     <div className={styles.containerCartWidget}>
       <Link to="/cart" className={styles.buttonCartWidget}>
@@ -14,7 +14,7 @@ const CartWidget = () => {
           alt="Imagen del carrito"
         />
       </Link>
-      <p className={styles.notificationCartWidget}>{itemsCart.length}</p>
+      <p className={styles.notificationCartWidget}>{totalCantidad}</p>
     </div>
   );
 };

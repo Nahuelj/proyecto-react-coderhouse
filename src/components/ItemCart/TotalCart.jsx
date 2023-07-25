@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./ItemCart.module.css"
 
-const TotalCart = ({cant=0, precio=1}) => {
+const TotalCart = ({cant, precio=1}) => {
   return (
     <div className={styles.container}> 
         <h3 className={styles.name}>

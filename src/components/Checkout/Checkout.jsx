@@ -3,6 +3,8 @@ import styles from "./Checkout.module.css"
 import { MyContext } from '../CartContext/CartContext'
 import { collection, addDoc } from "firebase/firestore"
 import {db} from "../../firebase/config"
+import { Link } from 'react-router-dom'
+import imgFlecha from "../../img/icons8-flecha-30.png"
 
 const Checkout = () => {
 
@@ -75,8 +77,13 @@ const Checkout = () => {
           <label className={styles.labelForm} htmlFor="">Correo electronico:</label>
           <input className={styles.inputForm} onChange={handlerChange} value={formValues.telefono} required name='telefono' type="number" placeholder='Numero Telefonico'/>
 
-        <button className={styles.buttonForm} type='submit'  onClick={handlerClick}>Comprar</button>
+        <button className={styles.buttonForm} type='submit'  onClick={handlerClick}>Finalizar Compra</button>
         </form>
+
+        <Link to="/">
+        <button className={styles.buttonMore}><img src={imgFlecha} alt="" />Volver a comprar</button>
+        </Link>
+        
 
     </div>
   )
